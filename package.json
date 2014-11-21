@@ -12,7 +12,8 @@
     "grunt-contrib-connect": "*",
     "grunt-autoprefixer": "*",
     "grunt-contrib-cssmin": "*",
-    "grunt-contrib-jshint": "*"
+    "grunt-contrib-jshint": "*",
+    "grunt-chmod": "*"
   },
   "dependencies": {
     "load-grunt-tasks": "*"
