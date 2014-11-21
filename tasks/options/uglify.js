@@ -1,6 +1,6 @@
 module.exports = {
   build: {
-    src: 'js/build/production.js',
-    dest: 'js/build/production.min.js'
+    src: 'js/production.js',
+    dest: 'js/production.min.js'
   }
 }

@@ -1,0 +1,9 @@
+@import "libs/normalize";
+
+
+// Example of ignoring prefixes
+@keyframes swing {
+  100% {
+    transform: translateX(100px);
+  }
+}
