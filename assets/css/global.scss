@@ -1,9 +1,6 @@
+// setup media-queries - all settings for breakpoints are in this file
+@import "vendor/media-queries";
+
+// reset global styles
 @import "vendor/normalize";
 
-
-// Example of ignoring prefixes
-@keyframes swing {
-  100% {
-    transform: translateX(100px);
-  }
-}
