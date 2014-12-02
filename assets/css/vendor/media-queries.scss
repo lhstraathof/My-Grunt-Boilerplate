@@ -1,3 +1,27 @@
+/**
+ * file '_foundation_media_queries.scss'
+ */
+
+// Media queries from Foundation framework by ZURB
+// http://foundation.zurb.com/
+// and on GitHub at https://github.com/zurb/foundation
+
+// functions
+// originally in https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss
+@function lower-bound($range){
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range,1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
 // Here we define the lower and upper bounds for each media size
 $small-range: (0em, 40em); /* 0, 640px */
 $medium-range: (40.063em, 64em); /* 641px, 1024px */
