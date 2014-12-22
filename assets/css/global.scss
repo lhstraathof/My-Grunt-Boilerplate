@@ -1,8 +1,27 @@
+// reset global styles
+@import "vendor/normalize";
+
+// -------------- Use the following imports to your own taste - these are prefered tools --------------
+
+// Grid http://jeet.gs/ -- to change grid settings open file assets/css/grid-jeet/_settings.scss
+@import "vendor/grid-jeet/index";
+
 // setup media-queries - all settings for breakpoints are in this file
 @import "vendor/media-queries";
 
-// reset global styles
-@import "vendor/normalize";
+// Animations
+@import "vendor/animate";
+
+// Typography
+@import "vendor/typography/styles";
+
+// Tables
+@import "vendor/table";
+
+// Forms
+@import "vendor/form";
+
+// -------------- End prefered tools --------------
 
 html {
   box-sizing: border-box;
@@ -10,3 +29,5 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+// Start your CSS here
