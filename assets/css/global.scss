@@ -1,25 +1,37 @@
+@charset 'UTF-8';
+
 // reset global styles
 @import "vendor/normalize";
+
+// Base
+@import '_base/_config',
+        '_base/_functions',
+        '_base/_mixins',
+        '_base/_fonts',
+        '_base/_icons',
+        '_base/_presets';
+
+// Layouts
+@import '_layouts/_l-grid',
+        '_layouts/_l-helpers';
+
+// Modules
+@import '_modules/_m-accordion';
+@import '_modules/_m-button';
+@import '_modules/_m-form';
+@import '_modules/_m-table';
+
 
 // -------------- Use the following imports to your own taste - these are prefered tools --------------
 
 // Grid http://jeet.gs/ -- to change grid settings open file assets/css/grid-jeet/_settings.scss
-@import "vendor/grid-jeet/index";
+@import "_vendor/grid-jeet/index";
 
 // setup media-queries - all settings for breakpoints are in this file
-@import "vendor/media-queries";
+@import "_vendor/media-queries";
 
 // Animations
-@import "vendor/animate";
-
-// Typography
-@import "vendor/typography/styles";
-
-// Tables
-@import "vendor/table";
-
-// Forms
-@import "vendor/form";
+@import "_vendor/animate";
 
 // -------------- End prefered tools --------------
 

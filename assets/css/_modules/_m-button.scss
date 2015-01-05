@@ -1,0 +1,39 @@
+[ui*="button"] {
+  cursor: pointer;
+  transition: all 200ms ease;
+  border: 0;
+  background: darken(white, 5%);
+  color: lighten(black, 20%);
+  padding: .5em 1.75em;
+  text-decoration: none;
+  &:hover {
+    background: darken(white, 10%);
+  }
+
+  &[ui*="small"] {
+    padding: .25em 1em;
+    font-size: .75em;
+  }
+  &[ui*="large"] {
+    padding: .75em 2em;
+    font-size: 1.25em;
+  }
+  &[ui*="huge"] {
+    padding: 1em 3em;
+    font-size: 1.25em;
+  }
+  &[ui*="round"] {
+    border-radius: 5px;
+  }
+  &[ui*="pill"] {
+    border-radius: 999em;
+  }
+  &[ui*="primary"] {
+    background: $corp-color;
+    color: white;
+  }
+  &[ui*="danger"] {
+    background: $corp-color-second;
+    color: white;
+  }
+}
