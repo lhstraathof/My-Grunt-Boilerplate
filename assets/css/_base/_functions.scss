@@ -13,3 +13,21 @@
   }
   @return false;
 }
+
+// FUNCTION: Calculate rem size in px
+@function calculateRem($size) {
+  $remSize: $size / $base-font-size;
+  @return $remSize * 1rem;
+}
+
+// NAME: black
+// USAGE: black(0.5);
+@function black($opacity){
+  @return rgba(0,0,0,$opacity);
+}
+
+// NAME: white
+// USAGE: white(0.5);
+@function white($opacity){
+  @return rgba(255,255,255,$opacity);
+}

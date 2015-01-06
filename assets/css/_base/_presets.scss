@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  @include font-size($base-font-size);
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }

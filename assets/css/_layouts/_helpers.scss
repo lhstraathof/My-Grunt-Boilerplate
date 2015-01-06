@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+// 1.Config
+
+// 2.Base
+// Name: Constrained
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $prevent-spacing;
+  padding-right: $prevent-spacing;
+  width: $max-wrapper-width;
+}
+
+// Name: Clearfix
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+// Name: Distances
+.distance-small {
+  margin-top: 20px;
+}
+.distance-medium {
+  margin-top: 40px;
+}
+.distance-large {
+  margin-top: 80px;
+}
+
+// Name: Floats
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+// Name: Center the unknown
+.center-wrap {
+   display: table;
+   width: 100%;
+}
+.center {
+   display: table-cell;
+   vertical-align: middle;
+}

@@ -1,39 +1,73 @@
-[ui*="button"] {
-  cursor: pointer;
-  transition: all 200ms ease;
-  border: 0;
-  background: darken(white, 5%);
-  color: lighten(black, 20%);
-  padding: .5em 1.75em;
-  text-decoration: none;
-  &:hover {
-    background: darken(white, 10%);
-  }
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button']
+{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 38px;
 
-  &[ui*="small"] {
-    padding: .25em 1em;
-    font-size: .75em;
-  }
-  &[ui*="large"] {
-    padding: .75em 2em;
-    font-size: 1.25em;
-  }
-  &[ui*="huge"] {
-    padding: 1em 3em;
-    font-size: 1.25em;
-  }
-  &[ui*="round"] {
-    border-radius: 5px;
-  }
-  &[ui*="pill"] {
-    border-radius: 999em;
-  }
-  &[ui*="primary"] {
-    background: $corp-color;
-    color: white;
-  }
-  &[ui*="danger"] {
-    background: $corp-color-second;
-    color: white;
-  }
+    display: inline-block;
+
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 30px;
+
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $corp-color;
+    border: 1px solid $corp-color;
+    border-radius: $base-border-radius;
+    background-color: transparent;
+
+    @include transition(color .3s ease, border .3s ease);
+}
+.button:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
+.button:focus,
+button:focus,
+input[type='submit']:focus,
+input[type='reset']:focus,
+input[type='button']:focus
+{
+    color: $corp-color;
+    border-color: $corp-color-dark;
+    outline: 0;
+}
+.button.button-primary,
+button.button-primary,
+input[type='submit'].button-primary,
+input[type='reset'].button-primary,
+input[type='button'].button-primary
+{
+    color: #fff;
+    border-color: $corp-color;
+    background-color: $corp-color;
+
+    @include transition(background-color .3s ease);
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type='submit'].button-primary:hover,
+input[type='reset'].button-primary:hover,
+input[type='button'].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type='submit'].button-primary:focus,
+input[type='reset'].button-primary:focus,
+input[type='button'].button-primary:focus
+{
+    color: #fff;
+    border-color: $corp-color-dark;
+    background-color: $corp-color-dark;
 }
