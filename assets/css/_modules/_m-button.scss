@@ -27,7 +27,7 @@ input[type='button']
     border-radius: $base-border-radius;
     background-color: transparent;
 
-    @include transition(color .3s ease, border .3s ease);
+    @include transition( (color .3s ease, border .3s ease) );
 }
 .button:hover,
 button:hover,
