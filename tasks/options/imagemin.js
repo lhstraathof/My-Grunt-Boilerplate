@@ -3,7 +3,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'assets/img/',
-      src: ['**/*.{png,jpg,gif}'],
+      src: ['assets/img/**/*.{png,jpg,gif}'],
       dest: 'img/'
     }]
   }
