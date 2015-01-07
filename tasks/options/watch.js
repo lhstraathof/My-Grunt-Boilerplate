@@ -17,11 +17,10 @@ module.exports = {
     }
   },
   images: {
-    files: ['assets/img/**/*.{png,jpg,gif}', 'assets/img/*.{png,jpg,gif}'],
+    files: ['assets/img/*.{png,jpg,gif}', 'assets/img/**/*.{png,jpg,gif}'],
     tasks: ['imagemin'],
     options: {
       spawn: false,
-      event: ['changed', 'added', 'deleted'],
     }
   },
   html:{
