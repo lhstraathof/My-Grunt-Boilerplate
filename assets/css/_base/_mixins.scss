@@ -144,14 +144,25 @@ $retina-suffix: '@2x';
 }
 
 // NAME: linear-gradient
-// USAGE: @include linear-gradient($corp-color, $corp-color-dark);
-@mixin linear-gradient($fromColor, $toColor) {
-  background-color: $toColor; /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
-  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
-  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
-  background-image:         linear-gradient(top, $fromColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+// USAGE: @include linear-gradient($corp-color, 0%, $corp-color-dark, 100%);
+@mixin linear-gradient( $start: #f1f1f1, $from: 0%, $stop: #d9d9d9, $to: 100% ) {
+  background: $start;
+  background: -webkit-gradient(linear, left top, left bottom, from(ie-hex-str($start)), to(ie-hex-str($stop)));
+  background: -moz-linear-gradient(center top, $start $from, $stop $to);
+  background: -moz-gradient(center top, $start $from, $stop $to);
+  background: -webkit-linear-gradient(top, $start $from,$stop $to);
+  background: -o-linear-gradient(top, $start $from,$stop $to);
+  background: -ms-linear-gradient(top, $start $from,$stop $to);
+  background: linear-gradient(to bottom, $start $from,$stop $to);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($start)}', endColorstr='#{ie-hex-str($stop)}',GradientType=0 );
+
+}
+
+// generic transform
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
 }
