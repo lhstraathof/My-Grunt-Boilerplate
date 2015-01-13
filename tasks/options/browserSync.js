@@ -1,7 +1,7 @@
 module.exports = {
     bsFiles: {
-    	// multiple globs
-        src : ["assets/css/**", "**.*.html", "assets/js/**/*.js", "assets/img/**"]
+        // multiple globs
+        src : ["css/minified/**", "*.html", "js/**", "img/**"]
     },
     options: {
         server: {
