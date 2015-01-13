@@ -1,7 +1,7 @@
 module.exports = {
-  options: {
-    livereload: true,
-  },
+  // options: {
+  //   livereload: true,
+  // },
   scripts: {
     files: ['assets/js/*.js', 'assets/js/vendor/*.js', 'assets/js/app/*.js'],
     tasks: ['jshint', 'concat', 'uglify'],

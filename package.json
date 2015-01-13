@@ -9,7 +9,7 @@
     "grunt-contrib-sass": "*",
     "grunt-contrib-imagemin": "*",
     "grunt-contrib-watch": "*",
-    "grunt-contrib-connect": "*",
+    "grunt-browser-sync": "*",
     "grunt-autoprefixer": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
