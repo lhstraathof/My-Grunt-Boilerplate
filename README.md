@@ -63,3 +63,8 @@ Alle nieuwe afbeeldingen sla je op in de map *"assets/img/*. Deze worden minifie
 http://css-tricks.com/video-screencasts/130-first-moments-grunt/
 
 http://24ways.org/2013/grunt-is-not-weird-and-hard/
+
+###Aanpassen van 'test-omgeving server'
+Mocht je bijvoorbeeld de test-server willen koppelen aan je localhost (php ontwikkel omgeving). Lees dan de documentatie op:
+
+http://www.browsersync.io/docs/grunt/
