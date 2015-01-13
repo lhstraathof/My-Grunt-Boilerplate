@@ -59,12 +59,22 @@ Alles staat nu gereed en je wilt aan de slag, maar welke bestanden gebruik je?
 **Images** 
 Alle nieuwe afbeeldingen sla je op in de map *"assets/img/*. Deze worden minified in de map *"img/"* geplaatst.
 
-###Bronnen voor het leren van Grunt.js
-http://css-tricks.com/video-screencasts/130-first-moments-grunt/
+###JS validatie
+Voor JS validatie gebruiken we Parsley, zie assets/js/extra. (include ook validatie-js voor nl taal).
 
-http://24ways.org/2013/grunt-is-not-weird-and-hard/
+http://parsleyjs.org/
+
+###JS Slider
+Voor het gebruik van een slider, include: jquery glide, zie assets/js/extra
+
+http://glide.jedrzejchalubek.com/
 
 ###Aanpassen van 'test-omgeving server'
 Mocht je bijvoorbeeld de test-server willen koppelen aan je localhost (php ontwikkel omgeving). Lees dan de documentatie op:
 
 http://www.browsersync.io/docs/grunt/
+
+###Bronnen voor het leren van Grunt.js
+http://css-tricks.com/video-screencasts/130-first-moments-grunt/
+
+http://24ways.org/2013/grunt-is-not-weird-and-hard/
