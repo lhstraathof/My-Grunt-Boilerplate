@@ -10,6 +10,7 @@
     "grunt-contrib-imagemin": "*",
     "grunt-contrib-watch": "*",
     "grunt-browser-sync": "*",
+    "grunt-weinre": "*",
     "grunt-autoprefixer": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
