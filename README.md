@@ -48,24 +48,24 @@ Zorg ervoor dat je svn client de mappen "node_modules" en ".sass-cache" negeert.
 ### Hoe nu verder?
 Alles staat nu gereed en je wilt aan de slag, maar welke bestanden gebruik je?
 
-**HTML**: Zoals je gewend bent bouw je je website volledig in ***index.html***. Alle links naar bestanden kun je beginnen met een "/" omdat we al een testserver draaien. Bekijk de eerste keer goed hoe de default links naar assets ingesteld staan. Je zult vervolgens de structuur van css en js ook beter begrijpen.
+**HTML**: Zoals je gewend bent bouw je je website volledig in ***index.html***. Alle links naar bestanden kun je beginnen met een "/" omdat we al een testserver draaien. Bekijk de eerste keer goed hoe de default links naar source ingesteld staan. Je zult vervolgens de structuur van css en js ook beter begrijpen.
 
-**Werkbestanden**: Alle werkbestanden zoals: CSS, JS en Images staan in de map ***assets***. Je werkt dan ook ***uitsluitend*** uit deze map. Grunt compiles/minified/concatinate deze files naar de root van je project in de mappen ***css***, ***js*** en ***img***.
+**Werkbestanden**: Alle werkbestanden zoals: CSS, JS en Images staan in de map ***source***. Je werkt dan ook ***uitsluitend*** uit deze map. Grunt compiles/minified/concatinate deze files naar de root van je project in de mappen ***css***, ***js*** en ***img***.
 
-**CSS**: Alle css wordt ingeladen in *"assets/css/global.scss"* doormiddel van imports. Dit bestand wordt middels een modulaire structuur opgebouwd. Het is aan te raden jouw project verder in deze methode te bouwen. Hierdoor zijn de elementen die je bouwd makkelijk los aan te passen. Daarnaast kun je modules makkelijk kopiëren en gebruiken in andere projecten. -- De globale css instellingen kun je in "*_base/_config.scss*" vinden. -- Bekijk de losse onderdelen een keer goed, er zitten handige functies in (vooral in "*_base/_mixins.scss*").
+**CSS**: Alle css wordt ingeladen in *"source/css/global.scss"* doormiddel van imports. Dit bestand wordt middels een modulaire structuur opgebouwd. Het is aan te raden jouw project verder in deze methode te bouwen. Hierdoor zijn de elementen die je bouwd makkelijk los aan te passen. Daarnaast kun je modules makkelijk kopiëren en gebruiken in andere projecten. -- De globale css instellingen kun je in "*_base/_config.scss*" vinden. -- Bekijk de losse onderdelen een keer goed, er zitten handige functies in (vooral in "*_base/_mixins.scss*").
 
-**JS**: Alle js files worden minified in 1 bestand geplaatst. Behalve de files die conditioneel worden ingeladen (denk aan jQuery, Selectivizr en polyfills). Alle third-party plugins (zoals jquery.validation) plaats je in de map "*assets/js/vendor/*". Ieder js bestand in deze map wordt automatisch toegevoegd aan het minimized productie bestand. Jouw maatwerk JS zet je in de file "*assets/js/global.js*". Alle js bestanden die je in de map *assets/js/* zet worden ook minimized naar het productie.min.js bestand.
+**JS**: Alle js files worden minified in 1 bestand geplaatst. Behalve de files die conditioneel worden ingeladen (denk aan jQuery, Selectivizr en polyfills). Alle third-party plugins (zoals jquery.validation) plaats je in de map "*source/js/vendor/*". Ieder js bestand in deze map wordt automatisch toegevoegd aan het minimized productie bestand. Jouw maatwerk JS zet je in de file "*source/js/global.js*". Alle js bestanden die je in de map *source/js/* zet worden ook minimized naar het productie.min.js bestand.
 
 **Images** 
-Alle nieuwe afbeeldingen sla je op in de map *"assets/img/*. Deze worden minified in de map *"img/"* geplaatst.
+Alle nieuwe afbeeldingen sla je op in de map *"source/img/*. Deze worden minified in de map *"img/"* geplaatst.
 
 ###JS validatie
-Voor JS validatie gebruiken we Parsley, zie assets/js/extra. (include ook validatie-js voor nl taal).
+Voor JS validatie gebruiken we Parsley, zie source/js/extra. (include ook validatie-js voor nl taal).
 
 http://parsleyjs.org/
 
 ###JS Slider
-Voor het gebruik van een slider, include: jquery glide, zie assets/js/extra
+Voor het gebruik van een slider, include: jquery glide, zie source/js/extra
 
 http://glide.jedrzejchalubek.com/
 

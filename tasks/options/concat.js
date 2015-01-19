@@ -1,8 +1,8 @@
 module.exports = {
   dist: {
     src: [
-      'assets/js/vendor/*.js',
-      'assets/js/*.js'
+      'source/js/vendor/*.js',
+      'source/js/*.js'
     ],
     dest: 'js/production.js'
   }
