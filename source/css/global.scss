@@ -4,12 +4,7 @@
 @import "_vendor/normalize";
 
 // Base
-@import '_base/_config',
-        '_base/_functions',
-        '_base/_mixins',
-        '_base/_fonts',
-        '_base/_icons',
-        '_base/_presets';
+@import '_base/*';
 
 // Layouts
 // Grid http://jeet.gs/ -- to change grid settings open file grid-jeet/_settings.scss
@@ -18,10 +13,7 @@
         '_layouts/_media-queries';
 
 // Modules
-@import '_modules/_m-typography';
-@import '_modules/_m-button';
-@import '_modules/_m-form';
-@import '_modules/_m-table';
+@import '_modules/*';
 
 
 // -------------- Use the following imports to your own taste - these are prefered tools --------------
