@@ -54,6 +54,8 @@ Alles staat nu gereed en je wilt aan de slag, maar welke bestanden gebruik je?
 
 **CSS**: Alle css wordt ingeladen in *"source/css/global.scss"* doormiddel van imports. Dit bestand wordt middels een modulaire structuur opgebouwd. Het is aan te raden jouw project verder in deze methode te bouwen. Hierdoor zijn de elementen die je bouwd makkelijk los aan te passen. Daarnaast kun je modules makkelijk kopiëren en gebruiken in andere projecten. -- De globale css instellingen kun je in "*_base/_config.scss*" vinden. -- Bekijk de losse onderdelen een keer goed, er zitten handige functies in (vooral in "*_base/_mixins.scss*").
 
+De manier van css gebruik heet RSCSS, zie: https://github.com/rstacruz/rscss
+
 **JS**: Alle js files worden minified in 1 bestand geplaatst. Behalve de files die conditioneel worden ingeladen (denk aan jQuery, Selectivizr en polyfills). Alle third-party plugins (zoals jquery.validation) plaats je in de map "*source/js/vendor/*". Ieder js bestand in deze map wordt automatisch toegevoegd aan het minimized productie bestand. Jouw maatwerk JS zet je in de file "*source/js/global.js*". Alle js bestanden die je in de map *source/js/* zet worden ook minimized naar het productie.min.js bestand.
 
 **Images** 
