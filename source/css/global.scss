@@ -4,7 +4,7 @@
 @import "_vendor/normalize";
 
 // Base
-@import '_base/*';
+@import '_base/_all';
 
 // Layouts
 // Grid http://jeet.gs/ -- to change grid settings open file grid-jeet/_settings.scss
@@ -13,7 +13,7 @@
         '_layouts/_media-queries';
 
 // Modules
-@import '_modules/*';
+@import '_modules/_all';
 
 
 // -------------- Use the following imports to your own taste - these are prefered tools --------------

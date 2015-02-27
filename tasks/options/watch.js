@@ -11,7 +11,7 @@ module.exports = {
   },
   css: {
     files: ['source/css/*.scss', 'source/css/**/*.scss'],
-    tasks: ['sass', 'autoprefixer', 'cssmin'],
+    tasks: ['sass_directory_import', 'sass', 'autoprefixer', 'cssmin'],
     options: {
       spawn: false,
     }
